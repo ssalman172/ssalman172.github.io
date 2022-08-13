@@ -1,17 +1,22 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  color: #eee;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
   min-height: 95px;
   background: #222831;
-  color: #eee;
   padding: 2% 3%;
+  border-bottom: 1px solid #eee;
+}
+
+header h1 {
+  font-family: 'Rubik Iso', cursive;
 }
 
 header h1:hover {
@@ -19,10 +24,10 @@ header h1:hover {
 }
 
 .navlist {
+  font-size: larger;
   display: inline-block;
   margin: 0 10px;
   text-decoration: none;
-  color: #eee;
 }
 
 .navlist:hover {
@@ -31,5 +36,79 @@ header h1:hover {
 }
 
 main {
-  height: 300px;
+  background: linear-gradient(to right bottom, #142850, #183057, #1c385f, #214166, #27496d);
+  min-height: 100vh;
+}
+
+.banner-img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.content-container {
+  padding: 2% 3%;
+}
+
+aside {
+  width: 25%;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 16px;
+}
+
+.basic-info {
+  display: flex;
+}
+
+.basic-info > div {
+  width: 65%;
+}
+
+.profile-img {
+  width: 35%;
+  height: 130px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.location {
+  display: flex;
+  margin-top: 4px;
+}
+
+.location p {
+  font-size: 14px;
+  margin-left: 4px;  
+}
+
+.desc {
+  margin-top: 12px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-evenly;
+  justify-items: center;
+  margin: 8px 0;
+}
+
+footer {
+  background: #212121;
+  min-height: 25px;  
+  padding: 1% 3%;
+}
+
+@media only screen and (min-width: 300px) {
+  
+}
+@media only screen and (min-width: 1024px) {
+  .content-container {
+    display: flex;
+  }
 }
