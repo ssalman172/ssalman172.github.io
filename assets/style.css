@@ -37,7 +37,8 @@ header h1:hover {
 
 main {
   background: linear-gradient(to right bottom, #142850, #183057, #1c385f, #214166, #27496d);
-  min-height: 100vh;
+  height: 100vh;
+  padding: 2% 3%;
 }
 
 .banner-img {
@@ -48,16 +49,15 @@ main {
   display: block;
 }
 
-.content-container {
-  padding: 2% 3%;
-}
-
 aside {
   width: 25%;
   border: 1px solid #eee;
   border-radius: 10px;
   padding: 10px;
   margin-right: 16px;
+  position: sticky;
+  top: 12px;
+  align-self: flex-start;
 }
 
 .basic-info {
@@ -108,7 +108,7 @@ footer {
   
 }
 @media only screen and (min-width: 1024px) {
-  .content-container {
+  main {
     display: flex;
   }
 }
