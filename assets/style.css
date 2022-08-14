@@ -37,8 +37,7 @@ header h1:hover {
 
 main {
   background: linear-gradient(to right bottom, #142850, #183057, #1c385f, #214166, #27496d);
-  height: 100vh;
-  padding: 3% 3%;
+  min-height: 100vh;  
 }
 
 .banner-img {
@@ -50,13 +49,9 @@ main {
 }
 
 aside {
-  width: 25%;
   border: 1px solid #eee;
   border-radius: 10px;
-  padding: 16px;
-  margin-right: 32px;
-  position: sticky;
-  top: 12px;
+  padding: 16px;  
   align-self: flex-start;
   box-shadow: 0px 3px 6px 0px #27496d;
 }
@@ -67,10 +62,10 @@ aside {
 }
 
 .basic-info {
-  display: flex;  
+  display: flex;
 }
 
-.basic-info > div {
+.basic-info>div {
   width: 65%;
   display: flex;
   flex-direction: column;
@@ -95,7 +90,7 @@ aside {
 
 .location p {
   font-size: 14px;
-  margin-left: 4px;  
+  margin-left: 4px;
 }
 
 .desc {
@@ -117,8 +112,23 @@ aside {
   height: 15px;
 }
 
-article {
-  width: 75%;
+.social-media a {
+  position: relative;
+}
+
+.socmed-hover-text {
+  display: none;
+  position: absolute;
+}
+
+.social-media a:hover .socmed-hover-text {
+  display: block;
+  top: -28px;
+  background: #222831;
+  color: #eee;
+  opacity: 95%;
+  padding: 3px 8px;
+  border-radius: 4px;
 }
 
 .article-head-text {
@@ -135,15 +145,48 @@ article a {
 
 footer {
   background: #212121;
-  min-height: 25px;  
+  min-height: 25px;
   padding: 1% 3%;
 }
 
 @media only screen and (min-width: 300px) {
-  
+  main {
+    padding: 7% 7%;    
+  }
+  aside {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  article {
+    width: 100%;
+  }
 }
+
+@media only screen and (min-width: 600px) {
+  .profile-img {
+    height: 180px;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   main {
     display: flex;
+    padding: 3% 3%;
+  }
+
+  aside {
+    width: 25%;
+    position: sticky;
+    top: 12px;
+    margin-right: 32px;
+  }
+
+  .profile-img {
+    height: 100px;
+  }
+
+  article {
+    width: 75%;
   }
 }
