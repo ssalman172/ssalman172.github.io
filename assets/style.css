@@ -137,7 +137,7 @@ aside {
   border-bottom: 1px solid #eee;
 }
 
-article div {
+article {
   margin-bottom: 1rem;
 }
 
@@ -162,7 +162,7 @@ footer {
     margin-bottom: 20px;
   }
 
-  article {
+  .article-container {
     width: 100%;
   }
 }
@@ -190,7 +190,7 @@ footer {
     height: 100px;
   }
 
-  article {
+  .article-container {
     width: 75%;
   }
 }

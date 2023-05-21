@@ -6,14 +6,14 @@ fetch(newsApiUrl).then((res) => {
 }).then((data) => {
   data.articles.forEach(article => {
     document.getElementById("article-content-list").innerHTML += `
-    <div>
+    <article>
     <h2>
       <a href=${article.url} target="_blank">
       ${article.title}
       </a>
     </h2>
     <p>Berita bersumber dari ${article.author}.</p>
-    </div>
+    </article>
     `;
   })
 })
