@@ -41,7 +41,7 @@ main {
 }
 
 .banner-img {
-  width: 100%;
+  width: 100vw;
   height: 80vh;
   object-fit: cover;
   object-position: center;
@@ -154,16 +154,14 @@ footer {
 }
 
 @media only screen and (min-width: 300px) {
-  main {
-    padding: 7% 7%;    
-  }
   aside {
-    width: 100%;
-    margin-bottom: 20px;
+    width: 84%;
+    margin: 7% 7% 20px 7%;
   }
 
   .article-container {
-    width: 100%;
+    width: 84%;
+    margin: 7% 7% 20px 7%;
   }
 }
 
@@ -176,14 +174,14 @@ footer {
 @media only screen and (min-width: 1024px) {
   main {
     display: flex;
-    padding: 3% 3%;
+    flex-wrap: wrap;
   }
 
   aside {
     width: 25%;
     position: sticky;
     top: 12px;
-    margin-right: 32px;
+    margin: 3% 32px 32px 3%;
   }
 
   .profile-img {
@@ -191,6 +189,7 @@ footer {
   }
 
   .article-container {
-    width: 75%;
+    width: 65%;
+    margin: 3% 3% 32px 0;
   }
 }
